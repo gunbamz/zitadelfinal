@@ -17,7 +17,7 @@ var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
 document.getElementById('appointment').addEventListener('submit', submitForm);
-document.getElementById('enquiry').addEventListener('submit', submitEnquiry);
+
 
 // Submit form
 function submitForm(e){
@@ -51,29 +51,6 @@ function submitForm(e){
 
 }
 
-function submitEnquiry(e){
-  e.preventDefault();
-
-  // Get values
-  var inputName = getInputVal('name');
-  var inputEmail = getInputVal('email');
-  var message = getInputVal('message');
-  
-  // Save message
-  saveEnquiry(inputName, inputEmail, message);
-
-  // Show alert
-  document.querySelector('footer .alert').style.display = 'block';
-
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('footer .alert').style.display = 'none';
-  },3000);
-  // Clear form
- 
-  document.getElementById('enquiry').reset();
-
-}
 
 
 // Function to get form values
@@ -95,11 +72,3 @@ function saveMessage(firstn, lastn, inputnumber, inputemail,  persontosee, appoi
   });
 }
 
-function saveEnquiry(inputName, inputEmail, message){
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name:inputName,
-    email:inputEmail,
-    message:message
-  });
-}

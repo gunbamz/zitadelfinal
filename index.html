@@ -37,30 +37,46 @@
     <![endif]-->
 </head>
 
-<body class="home one-page">
-    <div id="top"></div>
+<body class="home">
+    
     <div id="page" class="site animsition">
         <!-- Header -->
-        <header id="header" class="site-header sticky float">
+        <header id="header" class="site-header sticky">
             <div class="main-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div id="logo" class="logo">
                                 <a href="index.html">
-                                    <img src="img/logozit.png" alt="logo" />
+                                    <img src="img/logozitt.png" alt="logo" />
                                 </a>
                             </div><!-- /#logo -->
                             <div class="btn-menu"><span></span></div><!-- //mobile menu button -->
                             <nav id="main-nav" class="main-nav">
                                 <ul class="menu">
-                                    <li class="active"><a href="#top">Home</a></li>
-                                          <li><a href="#welcome">Clinics</a></li>
-                                          <li><a href="#about">About</a></li>
-                                          <li><a href="#gallery">Gallery</a></li>
-                                          <li><a href="#partners">Partners</a></li>
-                                          <li><a href="#webmap">Locate us</a></li>
-                                          <li><a href="#contact">Contact us</a></li>
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="has-sub" ><a href="services.html">Services</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="services.html">Diagnostic</a></li>
+                                            <li><a href="services.html">Surgical</a></li>
+                                            <li><a href="eye.html">Medical</a></li>
+                                            <li><a href="eye.html">Eye and Dental</a></li>
+                                            <li><a href="eye.html">Pharmacy</a></li>
+                                             
+                                        </ul>
+                                    </li>
+                                    <li class="has-sub"><a href="departments.html">Departments</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="departments.html">Family Medicine</a></li>
+                                            <li><a href="departments.html">Neurosurgery</a></li>
+                                            <li><a href="eye.html">Eye Clinic</a></li> 
+                                            <li><a href="eye.html">Dental</a></li>
+                                            <li><a href="eye.html">Laboratory</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.main-nav -->
                         </div><!-- /.col-md-12 -->
@@ -69,15 +85,16 @@
             </div><!-- /.main-header -->
         </header>
 
+
         <!-- Main Slider -->
         <section class="main-slider">
 	        <div id="rev-slider2">
 	            <ul>
-                    <li data-transition="crossfade" data-delay="150000">
-                            <img src="img/slides/phfront.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <li data-transition="crossfade" data-delay="10000">
+                            <img src="img/slides/phfront.JPG" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                             <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="center" data-hoffset="30" 
-                            data-y="top" data-voffset="450" 
+                            data-y="top" data-voffset="350" 
                             data-whitespace="nowrap"
                             data-transform_idle="o:1;" 
                             data-transform_in="o:0" 
@@ -88,7 +105,7 @@
                        
                         <div class="tp-caption sfl tp-resizeme" 
                             data-x="center" data-hoffset="30" 
-                            data-y="top" data-voffset="587" 
+                            data-y="top" data-voffset="450" 
                             data-whitespace="nowrap"
                             data-transform_idle="o:1;" 
                             data-transform_in="o:0" 
@@ -97,7 +114,7 @@
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">About Us</a>
                         </div>
                     </li>                   
-                    <li data-transition="crossfade">
+                    <li data-transition="crossfade" data-delay="10000">
 	                    <img src="img/slides/dental.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="30" 
@@ -142,8 +159,8 @@
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">Contact Us</a>
                         </div>
 	                </li>
-	                <li data-transition="crossfade">
-	                    <img src="img/slides/frontdesk.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+	                <li data-transition="crossfade" data-delay="10000">
+	                    <img src="img/slides/frontdesk.JPG" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="30" 
                             data-y="top" data-voffset="282" 
@@ -164,7 +181,7 @@
                             data-start="1500">
                             Clinic Reception
                         </div>
-                        <div class="tp-caption sfb tp-resizeme roll-banner-h3" 
+                        <div class="tp-caption sfb tp-resizeme roll-banner-p text-right" 
                             data-x="right" data-hoffset="30" 
                             data-y="top" data-voffset="399" 
                             data-whitespace="nowrap"
@@ -172,32 +189,22 @@
                             data-transform_in="o:0" 
                             data-transform_out="o:0" 
                             data-start="2000">
-                            <strong>Our doctors are at your disposal!</strong>
-                        </div>
-                        <div class="tp-caption sfb tp-resizeme roll-banner-p text-right" 
-                            data-x="right" data-hoffset="30" 
-                            data-y="top" data-voffset="474" 
-                            data-whitespace="nowrap"
-                            data-transform_idle="o:1;" 
-                            data-transform_in="o:0" 
-                            data-transform_out="o:0" 
-                            data-start="2500">
                             <h4 style="color:white;">
                                 Our number one goal is to make sure every one of<br>our patients leaves 100% happy and with a bright,<br> with our professional staff making this possible.
                             </h4>
                         </div>
                         <div class="tp-caption sfl tp-resizeme" 
                             data-x="right" data-hoffset="30" 
-                            data-y="top" data-voffset="600" 
+                            data-y="top" data-voffset="520" 
                             data-whitespace="nowrap"
                             data-transform_idle="o:1;" 
                             data-transform_in="o:0" 
                             data-transform_out="o:0" 
-                            data-start="2800">
+                            data-start="2500">
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">Book Appointment</a>
                         </div>
                     </li>
-                    <li data-transition="crossfade">
+                    <li data-transition="crossfade" data-delay="10000">
 	                    <img src="img/slides/lab.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="left" data-hoffset="30" 
@@ -242,8 +249,8 @@
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">Make Enquiry</a>
                         </div>
                     </li>
-                    <li data-transition="crossfade">
-                        <img src="img/slides/phside.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <li data-transition="crossfade" data-delay="10000">
+                        <img src="img/slides/phside.JPG" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="30" 
                             data-y="top" data-voffset="322" 
@@ -252,7 +259,7 @@
                             data-transform_in="o:0" 
                             data-transform_out="o:0" 
                             data-start="1000">
-                            <strong>Superb Medical Imaging</strong>
+                            <strong>We Bridge the Gap</strong>
                         </div>
                         <div class="tp-caption sfr tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="40" 
@@ -262,7 +269,7 @@
                             data-transform_in="o:0" 
                             data-transform_out="o:0" 
                             data-start="1500">
-                            Reassuring Well-being
+                            Quality Healthcare
                         </div>
                         <div class="tp-caption sfb tp-resizeme roll-banner-p" 
                             data-x="right" data-hoffset="30" 
@@ -273,8 +280,7 @@
                             data-transform_out="o:0" 
                             data-start="2000">
                             <h4 style="color:white;">
-                                We offer innovative imaging of the highest medical and technical quality<br>
-                                    together with inter-disciplinary cooperation of the best specialists<br>You can put your Mind at Ease.<br> 
+                                Experts provide preventive services, accurate diagnosis<br>and outpatient treatments for common and complex disorders
                             </h4>
                             </div>
                         <div class="tp-caption sfl tp-resizeme" 
@@ -288,8 +294,8 @@
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">Book Appointment</a>
                         </div>
                     </li>
-                    <li data-transition="crossfade">
-                        <img src="img/slides/lab2.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <li data-transition="crossfade" data-delay="10000">
+                        <img src="img/slides/lab2.JPG" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="30" 
                             data-y="top" data-voffset="322" 
@@ -298,7 +304,7 @@
                             data-transform_in="o:0" 
                             data-transform_out="o:0" 
                             data-start="1000">
-                            <strong>Superb Medical Imaging</strong>
+                            <strong>Fast and Accurate </strong>
                         </div>
                         <div class="tp-caption sfr tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="40" 
@@ -308,7 +314,7 @@
                             data-transform_in="o:0" 
                             data-transform_out="o:0" 
                             data-start="1500">
-                            Reassuring Well-being
+                            Diagnostic Tests
                         </div>
                         <div class="tp-caption sfb tp-resizeme roll-banner-p" 
                             data-x="right" data-hoffset="30" 
@@ -319,8 +325,7 @@
                             data-transform_out="o:0" 
                             data-start="2000">
                             <h4 style="color:white;">
-                                We offer innovative imaging of the highest medical and technical quality<br>
-                                    together with inter-disciplinary cooperation of the best specialists<br>You can put your Mind at Ease.<br> 
+                                We Provide qualitative and cost effective laboratory services<br> support and increase positive health care outcomes in Nigeria.<br>We are focused and invest in research, innovation and development.
                             </h4>
                             </div>
                         <div class="tp-caption sfl tp-resizeme" 
@@ -334,7 +339,7 @@
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">Book Appointment</a>
                         </div>
                     </li>
-                    <li data-transition="crossfade">
+                    <li data-transition="crossfade" data-delay="10000">
 	                    <img src="img/slides/radioneww.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="right" data-hoffset="30" 
@@ -380,7 +385,7 @@
                             <a href="#" class="roll-btn" data-toggle="modal" data-target="#myModal">Book Appointment</a>
                         </div>
 	                </li>
-	                <li data-transition="crossfade">
+	                <li data-transition="crossfade" data-delay="10000">
 	                    <img src="img/slides/surgg.jpg" alt="image" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                         <div class="tp-caption sfl tp-resizeme roll-banner-h1" 
                             data-x="left" data-hoffset="30" 
@@ -513,7 +518,7 @@
                                 <img src="img/icon/neuro.png" alt="image">
                             </div>
                             <h3><a href="page-departments.html">Neurosurgery</a></h3>
-                            <p>We deliver complex neurosurgical services (Brain & Spine Surgery) with good outcomes. This service is led by out in-house Consultant Neurosurgeon and supported by our partnership with Brain and Spine Surgery Consortium (BASS)
+                            <p>We deliver complex neurosurgical services (Brain & Spine Surgery) with good outcomes. This service is led by our in-house Consultant Neurosurgeon and supported by our partnership with Brain and Spine Surgery Consortium (BASS)
                             </p>
                         </div><!-- /.roll-iconbox -->
                         <div class="roll-spacer h35 hide-on-desktop"></div>
@@ -531,7 +536,7 @@
                             <div class="icons image">
                                 <img src="img/icon/oandg.png" alt="image">
                             </div>
-                            <h3><a href="page-departments.html">Gyneacology</a></h3>
+                            <h3><a href="page-departments.html">Maternal and Child Health</a></h3>
                             <p>Our Women's and Children's clinic provides excellent care in a safe and comfortable environment. General prenatal, delivery and postpartum care, high risk pregnancy, fetal non-stress tests, and on-site Ultrasound scans </p>
                         </div><!-- /.roll-iconbox -->
                         <div class="roll-spacer h35"></div>
@@ -540,7 +545,7 @@
                                 <img src="img/icon/eyeee.png" alt="image">
                             </div>
                             <h3><a href="eye.html">Ophthalmology</a></h3>
-                            <p>The Eye Clinic at ZitadelMedics care for children and adult patients with a broad range of eye conditions. The Eye Clinic does offer walk-in services as well.
+                            <p>The Eye Clinic at ZitadelMedics cares for children and adult patients with a broad range of eye conditions. The Eye Clinic does offer walk-in services as well.
                             </p>
                         </div><!-- /.roll-iconbox -->
                         <div class="roll-spacer h35 hide-on-desktop"></div>
@@ -551,7 +556,7 @@
                                 <img src="img/icon/radio.png" alt="image">
                             </div>
                             <h3><a href="page-departments.html">Radiodiagnosis</a></h3>
-                            <p>Highest standards in radiology imaging equipment and facility accreditation throughout our system. Bringing affordable and quality services to Nigerians and reducing medical tourism to the barest minimum</p>
+                            <p>We provide high quality imaging services including MRI, computed tomography, ultrasound, mammography, endoscopy and fluoroscopy. Bringing affordable and quality services to Nigerians and reducing medical tourism to the barest minimum</p>
                         </div><!-- /.roll-iconbox -->
                         <div class="roll-spacer h35"></div>
                         <div class="roll-iconbox clearfix">
@@ -559,7 +564,7 @@
                                 <img src="img/icon/lab.png" alt="image">
                             </div>
                             <h3><a href="page-departments.html">Laboratory</a></h3>
-                            <p>Our team is made up of experienced pathologists and laboratory scientists. Our innovative test menu includes various options for screening, diagnosis, treatment, and monitoring outcomes.</p>
+                            <p>Our team is made up of experienced certified health care professionals. Investigation menu includes various options for screening, diagnosis, treatment, and monitoring outcomes.</p>
                         </div><!-- /.roll-iconbox -->
                         <div class="roll-spacer h35"></div>
                         <div class="roll-iconbox clearfix">
@@ -567,7 +572,7 @@
                                 <img src="img/icon/icon-15.png" alt="image">
                             </div>
                             <h3><a href="page-departments.html">Dental Surgery</a></h3>
-                            <p>We provide many exciting services that will leave you more confident and have a bright, white smile on your face! We give hope to the hopeless tooth </p>
+                            <p>Dentistry is not one-size-fits-all, so we strive to give you an experience centered around your individual goals and needs using modern technology and superior techniques to give you a beautiful smile</p>
                         </div><!-- /.roll-iconbox -->
                     </div><!-- /.col-md-4 -->
                 </div><!-- /.row -->
@@ -582,7 +587,7 @@
                         <div class="roll-spacer h95"></div>
                         <h2>Briefly about <strong>Our Clinic</strong></h2>
                         <p>We are committed to discouraging medical tourism. Nigerians do not have to travel abroad for complex surgeries.
-                        We currently have three centers across nigeria: Abuja, Port Harcourt and Uyo. We are also listed among Health Care Providers for most HMOs in Nigeria.</p>
+                        We currently have three centers across nigeria: <a href="contact.html">Abuja</a>, <a href="contact-uyo.html">Port Harcourt </a> and<a href="contact-uyo.html">Uyo</a> . We are also listed among Health Care Providers for most HMOs in Nigeria.</p>
                         <div class="roll-spacer h10"></div>
                         <div class="roll-iconlist">
                             <div class="clearfix">
@@ -692,35 +697,6 @@
                         </div><!-- /.row -->
                     </div><!-- /.container -->
         </section>
-
-        <!-- Partners -->
-        <section id="partners" class="roll-section partners">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="roll-titlebox text-center">
-                            <h2>Our <strong>Partners</strong></h2>
-                            <p>Below are our patners in quality health care delivary. We are strongly committed to effective and mordern approach to medical and surgical management.</p>
-                        </div><!-- /.roll-titlebox -->
-                        <div class="roll-spacer h70"></div>
-                        <div class="roll-clients" data-arrow="false" data-bullet="true" data-item="6">
-                            <div class="owl-carousel">
-                                <div class="client">
-                                    <a href="#"><img src="img/loggos/basscc.png" alt="image"></a>
-                                </div>
-                                <div class="client">
-                                    <a href="#"><img src="img/loggos/welnessmall.png" alt="image"></a>
-                                </div>
-                                <div class="client">
-                                    <a href="#"><img src="img/loggos/obasi.png" alt="image"></a>
-                                </div>    
-                            </div>
-                        </div><!-- /.roll-clients -->
-                    </div><!-- /.col-md-12 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section>
-
         <section id="webmap" class="roll-section partners">
             <div class="container">
                 <div class="row" style="margin-bottom: 20px">
@@ -738,23 +714,49 @@
             <div class="footer-widgets">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <aside class="widget widget_text">
                                 <img src="img/icon/dresslogo.png" alt="image" width="125">
+                                <h2><strong>ABUJA BRANCH</strong></h2>
                                 <div class="roll-spacer h15"></div>
-                                <div>
-                                 Delivery of complex healthcare sevices in Nigeria with a broad vision of discouraging medical tourism.
-                                </div>
                                 <div class="roll-spacer h15"></div>
                                 <ul class="footer-info">
                                     <li class="address">Plot 417 1st Ave<br>Gwarinpa Estate ABUJA, FCT</li>
-                                    <li class="phone">09069550855; 08111904085</li>
+                                    <li class="phone">09069550855</li>
                                     <li class="email">info@zitadelmedics.com</li>
                                 </ul>
-                                <a href="page-departments.html" class="roll-button size-1"><span>Read more</span></a>
+                                <a href="contact.html" class="roll-button size-1"><span>contact us</span></a>
                             </aside>
                         </div><!-- /.col-md-9 -->
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
+                                <aside class="widget widget_text">
+                                    <img src="img/icon/dresslogo.png" alt="image" width="125">
+                                    <h2><strong>P. HARCOURT BRANCH</strong></h2>
+                                    <div class="roll-spacer h15"></div>
+                                    <div class="roll-spacer h15"></div>
+                                    <ul class="footer-info">
+                                        <li class="address">Plot 58, Prof. Okujagu St.,<br>P. Harcourt, River State.</li>
+                                        <li class="phone">07038759990</li>
+                                        <li class="email">infoph@zitadelmedics.com</li>
+                                    </ul>
+                                    <a href="contact-uyo.html" class="roll-button size-1"><span>contact us</span></a> 
+                                </aside>
+                            </div><!-- /.col-md-9 -->
+                            <div class="col-sm-3">
+                                    <aside class="widget widget_text">
+                                        <img src="img/icon/dresslogo.png" alt="image" width="125">
+                                        <h2><strong>UYO BRANCH</strong></h2>
+                                        <div class="roll-spacer h15"></div>
+                                        <div class="roll-spacer h15"></div>
+                                        <ul class="footer-info">
+                                            <li class="address">60 osongama Road<br> Uyo, Akwa Ibom State.</li>
+                                            <li class="phone">07019036625</li>
+                                            <li class="email">infouyo@zitadelmedics.com</li>
+                                        </ul>
+                                        <a href="contact-uyo.html" class="roll-button size-1"><span>contact us</span></a> 
+                                    </aside>
+                                </div><!-- /.col-md-9 -->
+                        <div class="col-sm-3">
                             <aside class="widget widget_text">
                                 <div class="roll-spacer h15"></div>
                                  <div class="content">
@@ -775,37 +777,7 @@
                                   </div>
                             </aside>
                         </div><!-- /.col-md-9 -->
-                        <div class="col-md-6">
-                            <h2>Make <strong>Enquiry</strong></h2>
-                          <form id="enquiry">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label>Tell us your name</label>
-                                  <input class="form-control" name="name" id="name" placeholder="" type="text" required/>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label>What&#39;s your email address?</label>
-                                  <input class="form-control" name="email" id="email" placeholder="" type="email" required/>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Give us the details</label>
-                                  <textarea class="form-control" name="message" id="message" placeholder="" rows="4" required></textarea>
-                                </div>
-                                <div class="text-center">
-                                  <button class="roll-button size-1" type="submit">Send Message </button>
-                                </div>
-                              </div>
-                            </div>
-                        </form>
-                        <div class="alert">Your message has been sent, We'll get back to you shortly.</div>
-                        </div>
+                        
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </div>

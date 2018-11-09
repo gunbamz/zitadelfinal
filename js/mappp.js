@@ -1,21 +1,16 @@
 
-
-
-
-
 function initMap() {
 
     var myLatLng = {
-        lat: 7.893991, lng: 7.470657};
+        lat: 4.827554, lng: 7.375509};
 
     var locations = [
-        ['ZitadelMedics Abuja', 9.111011, 7.414441, 1],
         ['ZitadelMedics PortHarcourt', 4.811057, 7.049831, 2],
         ['ZitadelMedics Uyo', 5.006240, 7.956252, 3]
       ];
     
      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
+        zoom: 10,
         center: myLatLng
     });
 
@@ -35,5 +30,6 @@ function initMap() {
         })(marker, count));
       }
 }
+
 
 
